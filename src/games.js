@@ -18,7 +18,7 @@ export const videos = [
     links: [
       {
         id: 0,
-        url: "https://www.play-games.com/game/8043/bubble-trouble.html",
+        url: "https://www.play-games.com/embed/8043.html",
       },
     ],
     image: "",
@@ -42,7 +42,7 @@ export const videos = [
     links: [
       {
         id: 0,
-        url: "https://placeholder-link.com",
+        url: "https://games.crazygames.com/en_US/bush-shootout/index.html",
       },
     ],
     image: "",
@@ -66,7 +66,7 @@ export const videos = [
     links: [
       {
         id: 0,
-        url: "https://placeholder-link.com",
+        url: "https://www.retrogames.cc/embed/42754-pepsiman-japan.html",
       },
     ],
     image: "",
@@ -78,7 +78,7 @@ export const videos = [
     links: [
       {
         id: 0,
-        url: "https://placeholder-link.com",
+        url: "https://www.retrogames.cc/embed/32832-tom-and-jerry-in-fists-of-furry-usa.html",
       },
     ],
     image: "",
@@ -102,7 +102,7 @@ export const videos = [
     links: [
       {
         id: 0,
-        url: "https://placeholder-link.com",
+        url: "https://www.retrogames.cc/embed/21342-circus-charlie-japan.html",
       },
     ],
     image: "",
@@ -126,7 +126,7 @@ export const videos = [
     links: [
       {
         id: 0,
-        url: "https://placeholder-link.com",
+        url: "https://www.retrogames.cc/embed/42265-pink-panther-pinkadelic-pursuit.html",
       },
     ],
     image: "",
@@ -174,7 +174,7 @@ export const videos = [
     links: [
       {
         id: 0,
-        url: "https://placeholder-link.com",
+        url: "https://www.play-games.com/iframe/4272.html",
       },
     ],
     image: "",
@@ -186,7 +186,7 @@ export const videos = [
     links: [
       {
         id: 0,
-        url: "https://placeholder-link.com",
+        url: "https://www.play-games.com/embed/19584.html",
       },
     ],
     image: "",
@@ -198,7 +198,7 @@ export const videos = [
     links: [
       {
         id: 0,
-        url: "https://placeholder-link.com",
+        url: "https://www.play-games.com/embed/33552.html",
       },
     ],
     image: "",
