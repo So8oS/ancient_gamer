@@ -12,6 +12,7 @@ export const videos = [
     image: "https://i.ytimg.com/vi/xrfx8tab5aQ/maxresdefault.jpg",
     available: true,
     playableOnPhone: false,
+    platform: "Flash Game",
   },
   {
     id: 1,
@@ -26,6 +27,7 @@ export const videos = [
     image: "",
     available: true,
     playableOnPhone: false,
+    platform: "Flash Game",
   },
   {
     id: 2,
@@ -40,6 +42,7 @@ export const videos = [
     image: "",
     available: true,
     playableOnPhone: false,
+    platform: "Flash Game",
   },
   {
     id: 3,
@@ -54,6 +57,7 @@ export const videos = [
     image: "",
     available: true,
     playableOnPhone: true,
+    platform: "Flash Game",
   },
   {
     id: 4,
@@ -68,6 +72,7 @@ export const videos = [
     image: "",
     available: true,
     playableOnPhone: false,
+    platform: "PS1",
   },
   {
     id: 5,
@@ -82,6 +87,7 @@ export const videos = [
     image: "",
     available: true,
     playableOnPhone: true,
+    platform: "PS1",
   },
   {
     id: 6,
@@ -96,6 +102,7 @@ export const videos = [
     image: "",
     available: true,
     playableOnPhone: true,
+    platform: "PS1",
   },
   {
     id: 7,
@@ -110,6 +117,7 @@ export const videos = [
     image: "",
     available: false,
     playableOnPhone: false,
+    platform: "PS2",
   },
   {
     id: 8,
@@ -124,6 +132,7 @@ export const videos = [
     image: "",
     available: true,
     playableOnPhone: true,
+    platform: "Flash Game",
   },
   {
     id: 9,
@@ -138,6 +147,7 @@ export const videos = [
     image: "",
     available: false,
     playableOnPhone: false,
+    platform: "PS2",
   },
   {
     id: 10,
@@ -152,6 +162,7 @@ export const videos = [
     image: "",
     available: true,
     playableOnPhone: true,
+    platform: "PS1",
   },
   {
     id: 11,
@@ -166,6 +177,7 @@ export const videos = [
     image: "",
     available: true,
     playableOnPhone: false,
+    platform: "Flash Game",
   },
   {
     id: 12,
@@ -180,6 +192,7 @@ export const videos = [
     image: "",
     available: true,
     playableOnPhone: false,
+    platform: "Flash Game",
   },
   {
     id: 13,
@@ -194,6 +207,7 @@ export const videos = [
     image: "",
     available: true,
     playableOnPhone: false,
+    platform: "Flash Game",
   },
   {
     id: 14,
@@ -208,6 +222,7 @@ export const videos = [
     image: "",
     available: true,
     playableOnPhone: true,
+    platform: "Flash Game",
   },
   {
     id: 15,
@@ -222,6 +237,7 @@ export const videos = [
     image: "",
     available: true,
     playableOnPhone: false,
+    platform: "Flash Game",
   },
   {
     id: 16,
@@ -236,5 +252,6 @@ export const videos = [
     image: "",
     available: true,
     playableOnPhone: false,
+    platform: "Flash Game",
   },
 ];
