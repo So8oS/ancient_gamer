@@ -12,7 +12,7 @@ export default function Home() {
   const filteredVideos = view === "phone" ? videos.filter((video) => video.playableOnPhone) : videos;
 
   return (
-    <div className="flex flex-col justify-center items-center p-3 text-gray-100 ">
+    <div className="flex flex-col justify-center items-center p-3 text-gray-100 bg-[url('/wp.jpg')] ">
       {/* Navbar */}
       <div className="flex justify-between items-center gap-1  w-full h-16  bg-slate-700 rounded-3xl px-4 ">
         <div className="flex justify-center items-center ">

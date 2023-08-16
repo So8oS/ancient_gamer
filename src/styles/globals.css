@@ -6,3 +6,8 @@ html {
   scroll-behavior: smooth;
   background-color: #8c9093;
 }
+
+/* body {
+  background-image: url("/wp.jpg");
+  background-repeat: repeat-y;
+} */
