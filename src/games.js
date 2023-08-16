@@ -10,6 +10,8 @@ export const videos = [
       },
     ],
     image: "https://i.ytimg.com/vi/xrfx8tab5aQ/maxresdefault.jpg",
+    available: true,
+    playableOnPhone: false,
   },
   {
     id: 1,
@@ -22,6 +24,8 @@ export const videos = [
       },
     ],
     image: "",
+    available: true,
+    playableOnPhone: false,
   },
   {
     id: 2,
@@ -34,6 +38,8 @@ export const videos = [
       },
     ],
     image: "",
+    available: true,
+    playableOnPhone: false,
   },
   {
     id: 3,
@@ -46,6 +52,8 @@ export const videos = [
       },
     ],
     image: "",
+    available: true,
+    playableOnPhone: true,
   },
   {
     id: 4,
@@ -58,6 +66,8 @@ export const videos = [
       },
     ],
     image: "",
+    available: true,
+    playableOnPhone: false,
   },
   {
     id: 5,
@@ -70,6 +80,8 @@ export const videos = [
       },
     ],
     image: "",
+    available: true,
+    playableOnPhone: true,
   },
   {
     id: 6,
@@ -82,6 +94,8 @@ export const videos = [
       },
     ],
     image: "",
+    available: true,
+    playableOnPhone: true,
   },
   {
     id: 7,
@@ -94,6 +108,8 @@ export const videos = [
       },
     ],
     image: "",
+    available: false,
+    playableOnPhone: false,
   },
   {
     id: 8,
@@ -106,6 +122,8 @@ export const videos = [
       },
     ],
     image: "",
+    available: true,
+    playableOnPhone: true,
   },
   {
     id: 9,
@@ -118,6 +136,8 @@ export const videos = [
       },
     ],
     image: "",
+    available: false,
+    playableOnPhone: false,
   },
   {
     id: 10,
@@ -130,6 +150,8 @@ export const videos = [
       },
     ],
     image: "",
+    available: true,
+    playableOnPhone: true,
   },
   {
     id: 11,
@@ -142,6 +164,8 @@ export const videos = [
       },
     ],
     image: "",
+    available: true,
+    playableOnPhone: false,
   },
   {
     id: 12,
@@ -154,6 +178,8 @@ export const videos = [
       },
     ],
     image: "",
+    available: true,
+    playableOnPhone: false,
   },
   {
     id: 13,
@@ -166,6 +192,8 @@ export const videos = [
       },
     ],
     image: "",
+    available: true,
+    playableOnPhone: false,
   },
   {
     id: 14,
@@ -178,6 +206,8 @@ export const videos = [
       },
     ],
     image: "",
+    available: true,
+    playableOnPhone: true,
   },
   {
     id: 15,
@@ -190,6 +220,8 @@ export const videos = [
       },
     ],
     image: "",
+    available: true,
+    playableOnPhone: false,
   },
   {
     id: 16,
@@ -202,5 +234,7 @@ export const videos = [
       },
     ],
     image: "",
+    available: true,
+    playableOnPhone: false,
   },
 ];
