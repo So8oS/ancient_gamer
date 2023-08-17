@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { videos } from "./../games";
@@ -9,7 +10,10 @@ export default function Home() {
   const filteredVideos = view === "phone" ? videos.filter((video) => video.playableOnPhone) : videos;
 
   return (
-    <div className="flex flex-wrap justify-center ">
+    <div className="flex flex-col justify-center items-center ">
+      <div className="flex flex-col justify-center items-center p-10 w-10/12 md:w-[45rem] mt-5 text-center md:rounded-none rounded-lg bg-[url('/cage3.png')]   bg-orange-800  font-LuckiestGuy ">
+        <h1 className="text-4xl ">Let's Get a bit Nostalgic Eh?</h1>
+      </div>
       <div className="flex gap-3 mt-10">
         <button
           onClick={() => setView("all")}
