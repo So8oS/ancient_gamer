@@ -86,8 +86,8 @@ const Privacy = () => {
           <li>
             <p>
               <strong>Website</strong> refers to Ancient Gamer, accessible from{" "}
-              <a href="https://ancient-gamer.vercel.app/" rel="external nofollow noopener" target="_blank">
-                https://ancient-gamer.vercel.app/
+              <a href="https://www.ancientgamer.net/" rel="external nofollow noopener" target="_blank">
+                https://www.ancientgamer.net/
               </a>
             </p>
           </li>
@@ -335,8 +335,8 @@ const Privacy = () => {
         <ul>
           <li>
             By visiting this page on our website:{" "}
-            <a href="https://ancient-gamer.vercel.app/contact" rel="external nofollow noopener" target="_blank">
-              https://ancient-gamer.vercel.app/contact
+            <a href="https://www.ancientgamer.net/contact" rel="external nofollow noopener" target="_blank">
+              https://https://www.ancientgamer.net/contact
             </a>
           </li>
         </ul>
