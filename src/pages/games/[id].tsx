@@ -16,6 +16,7 @@ const Game = () => {
         className="w-full h-[25rem] md:h-[45rem] mt-10 "
         src={game?.links[0].url}
         frameBorder="no"
+        // @ts-ignore
         allowfullscreen="true"
         webkitallowfullscreen="true"
         mozallowfullscreen="true"
