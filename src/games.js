@@ -171,7 +171,7 @@ export const videos = [
     links: [
       {
         id: 0,
-        url: "https://placeholder-link.com",
+        url: "https://www.miniplay.com/embed/heli-attack-3",
       },
     ],
     image: "",
@@ -186,7 +186,7 @@ export const videos = [
     links: [
       {
         id: 0,
-        url: "https://placeholder-link.com",
+        url: "https://f.kbhgames.com/RS/game.php?r=//f.kbhgames.com/2018/swf/bushroyalrampage.swf&w=550&h=445&warnsupport=true",
       },
     ],
     image: "",
@@ -261,7 +261,7 @@ export const videos = [
     links: [
       {
         id: 0,
-        url: "https://www.miniplay.com/embed/stan-james",
+        url: "https://games.kidzsearch.com/computer/flashgame_data/ruffleplayer.html?game=stan-james-original-free-kick-challenge-13090",
       },
     ],
     image: "",
