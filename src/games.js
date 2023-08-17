@@ -254,4 +254,19 @@ export const videos = [
     playableOnPhone: false,
     platform: "Flash Game",
   },
+  {
+    id: 17,
+    title: "Stan James: Freekick Challenge",
+    url: "https://www.youtube.com/embed/9B-H2ELbyi4",
+    links: [
+      {
+        id: 0,
+        url: "https://www.miniplay.com/embed/stan-james",
+      },
+    ],
+    image: "",
+    available: true,
+    playableOnPhone: true,
+    platform: "Flash Game",
+  },
 ];
