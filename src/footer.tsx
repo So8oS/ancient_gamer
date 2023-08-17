@@ -7,7 +7,7 @@ const Footer = () => {
       <Link className="font-LuckiestGuy " href={"/privacy"}>
         Privacy Policy
       </Link>
-      <Link className="font-LuckiestGuy " href={"/privacy"}>
+      <Link className="font-LuckiestGuy " href={"/contact"}>
         Contact Us
       </Link>
     </div>

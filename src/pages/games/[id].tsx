@@ -22,7 +22,7 @@ const Game = () => {
         mozallowfullscreen="true"
         scrolling="no"
       ></iframe>
-      <h1 className="bg-orange-800 p-4 rounded-2xl mt-5">Right click/long press {"=>"} Enter Full Screen to play with full screen </h1>
+      <h1 className="bg-orange-800 p-4 rounded-2xl mt-5 ">Right click/long press {"=>"} Enter Full Screen to play with full screen </h1>
     </div>
   );
 };

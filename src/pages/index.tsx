@@ -37,7 +37,7 @@ export default function Home() {
                 allowFullScreen
               ></iframe>
               <div className="flex justify-center items-center ">
-                <h1 className="text-xl font-LuckiestGuy mt-2">{video.title}</h1>
+                <h1 className="md:text-xl text-lg font-LuckiestGuy mt-2">{video.title}</h1>
                 {video.playableOnPhone && <ImMobile className="h-6 w-6 pt-1 " />}
               </div>
               <h1 className=" font-LuckiestGuy  mt-2 bg-red-700 p-2 rounded-lg">{video.platform}</h1>
