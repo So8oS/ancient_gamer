@@ -7,13 +7,13 @@ import { BsYoutube } from "react-icons/bs";
 
 const Navbar = () => {
   return (
-    <div
-      className="flex justify-between items-center gap-1  w-full h-16 cursor-pointer  bg-slate-700 rounded-3xl px-4 "
-      onClick={() => {
-        window.location.href = "/";
-      }}
-    >
-      <div className="flex justify-center items-center ">
+    <div className="flex justify-between items-center gap-1  w-full h-16  bg-slate-700 rounded-3xl px-4 ">
+      <div
+        className="flex justify-center items-center cursor-pointer  "
+        onClick={() => {
+          window.location.href = "/";
+        }}
+      >
         <h1 className="font-LuckiestGuy text-2xl ">Ancient Gamer</h1>
         <img className="w-14" src="/logo.png" alt="logo" />
       </div>
