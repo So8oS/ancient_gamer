@@ -50,27 +50,29 @@ export default function Home() {
 
       {/* Card List */}
       <div className="flex flex-wrap justify-center gap-8 mt-10">
-        {filteredVideos.map((video) => (
-          <div key={video.url} className="flex flex-col items-center border-b pb-3 ">
-            <iframe
-              className="h-96 md:w-96 rounded-lg mt-3 shadow"
-              src={video.url}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-            <div className="flex justify-center items-center ">
-              <h1 className="text-xl font-LuckiestGuy mt-2">{video.title}</h1>
-              {video.playableOnPhone && <ImMobile className="h-6 w-6 pt-1 " />}
+        {filteredVideos
+          .map((video) => (
+            <div key={video.url} className="flex flex-col items-center border-b pb-3 ">
+              <iframe
+                className="h-96 md:w-96 rounded-lg mt-3 shadow"
+                src={video.url}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+              <div className="flex justify-center items-center ">
+                <h1 className="text-xl font-LuckiestGuy mt-2">{video.title}</h1>
+                {video.playableOnPhone && <ImMobile className="h-6 w-6 pt-1 " />}
+              </div>
+              <h1 className=" font-LuckiestGuy  mt-2 bg-red-700 p-2 rounded-lg">{video.platform}</h1>
+              {video.available &&
+                video.links.map((link) => (
+                  <Link key={link.id} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-3 shadow" target="_blank" href={`./games/${video.id}`} rel="noreferrer">
+                    Play Now
+                  </Link>
+                ))}
             </div>
-            <h1 className=" font-LuckiestGuy  mt-2 bg-red-700 p-2 rounded-lg">{video.platform}</h1>
-            {video.available &&
-              video.links.map((link) => (
-                <Link key={link.id} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-3 shadow" target="_blank" href={`./games/${video.id}`} rel="noreferrer">
-                  Play Now
-                </Link>
-              ))}
-          </div>
-        ))}
+          ))
+          .reverse()}
       </div>
 
       <div className="w-full h-16  bg-slate-700 flex justify-center items-center mt-5 gap-2 rounded-3xl">
