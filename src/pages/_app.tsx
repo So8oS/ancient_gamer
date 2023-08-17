@@ -8,6 +8,7 @@ import React from "react";
 import { GrInstagram } from "react-icons/gr";
 import { FaTiktok } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -37,6 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </div>
       <Component {...pageProps} />
       <Footer />
+      <Analytics />
     </div>
   );
 }
