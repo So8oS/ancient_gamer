@@ -5,7 +5,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="flex flex-col justify-center items-center min-h-screen">
-      <div className="flex flex-col justify-center items-center gap-10 w-full md:w-[60rem] bg-orange-800 md:p-20 rounded-2xl text-xl font-LuckiestGuy text-slate-200">
+      <div className="flex flex-col justify-center items-center gap-10 w-full md:w-[60rem] bg-orange-800 p-10 md:p-20 rounded-2xl md:text-xl font-LuckiestGuy text-slate-200 mt-5 md:mt-0">
         <img className="w-32 " src="logo.png" alt="logo" />
         <div className="flex flex-col justify-center items-center gap-5">
           <p>
