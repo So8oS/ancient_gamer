@@ -7,6 +7,7 @@ import { ImMobile } from "react-icons/im";
 
 export default function Home() {
   const [view, setView] = useState("all");
+  const [sliceValue, setSliceValue] = useState(8);
   const filteredVideos = view === "phone" ? videos.filter((video) => video.playableOnPhone) : videos;
 
   return (
@@ -53,8 +54,14 @@ export default function Home() {
                 ))}
             </div>
           ))
-          .reverse()}
+          .reverse()
+          .slice(0, sliceValue)}
       </div>
+      {sliceValue < filteredVideos.length && (
+        <button onClick={() => setSliceValue(sliceValue + 8)} className={` bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-3xl border border-blue-500 shadow-2xl mt-5`}>
+          Show More
+        </button>
+      )}
     </div>
   );
 }
