@@ -5,10 +5,23 @@ import { videos } from "./../games";
 import { useState } from "react";
 import { ImMobile } from "react-icons/im";
 
-export default function Home() {
+interface Props {
+  initialVideos: typeof videos;
+}
+interface Video {
+  id: number;
+  title: string;
+  url: string;
+  platform: string;
+  available: boolean;
+  links: { id: number; url: string }[];
+  playableOnPhone: boolean;
+}
+
+export default function Home({ initialVideos }: Props) {
   const [view, setView] = useState("all");
   const [sliceValue, setSliceValue] = useState(8);
-  const filteredVideos = view === "phone" ? videos.filter((video) => video.playableOnPhone) : videos;
+  const filteredVideos = view === "phone" ? videos.filter((video) => video.playableOnPhone) : initialVideos;
 
   return (
     <div className="flex flex-col justify-center items-center ">
@@ -64,4 +77,12 @@ export default function Home() {
       )}
     </div>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      initialVideos: videos,
+    },
+  };
 }
