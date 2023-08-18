@@ -1,11 +1,13 @@
 import { useRouter } from "next/router";
 import React from "react";
-import { videos } from "./../../games";
+import { videosAtom } from "./../../games";
+import { useAtom } from "jotai";
 
 const Game = () => {
   const router = useRouter();
   // @ts-ignore
   const id = parseInt(router.query.id);
+  const [videos] = useAtom(videosAtom);
   const game = videos.find((game) => game.id === id);
   console.log(id);
   return (
