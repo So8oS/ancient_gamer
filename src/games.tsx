@@ -1,4 +1,15 @@
-export const videos = [
+import { atomWithStorage } from "jotai/utils";
+interface Video {
+  id: number;
+  title: string;
+  url: string;
+  platform: string;
+  available: boolean;
+  links: { id: number; url: string }[];
+  playableOnPhone: boolean;
+}
+
+export const games = [
   {
     id: 0,
     title: "Stan Skate",
@@ -270,3 +281,4 @@ export const videos = [
     platform: "Flash Game",
   },
 ];
+export const videosAtom = atomWithStorage<Video[]>("games", games);

@@ -1,28 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { videos } from "./../games";
-import { useState } from "react";
+import { videosAtom } from "./../games";
+import { useEffect, useState } from "react";
 import { ImMobile } from "react-icons/im";
+import { useAtom } from "jotai";
 
-interface Props {
-  initialVideos: typeof videos;
-}
-interface Video {
-  id: number;
-  title: string;
-  url: string;
-  platform: string;
-  available: boolean;
-  links: { id: number; url: string }[];
-  playableOnPhone: boolean;
-}
-
-export default function Home({ initialVideos }: Props) {
+export default function Home() {
   const [view, setView] = useState("all");
+  const [videos] = useAtom(videosAtom);
   const [sliceValue, setSliceValue] = useState(8);
-  const filteredVideos = view === "phone" ? videos.filter((video) => video.playableOnPhone) : initialVideos;
+  const filteredVideos = view === "phone" ? videos.filter((video) => video.playableOnPhone) : videos;
 
+  useEffect(() => {}, []);
   return (
     <div className="flex flex-col justify-center items-center ">
       <div className="flex flex-col justify-center items-center p-10 w-10/12 md:w-[45rem] mt-5 text-center md:rounded-none rounded-lg bg-[url('/cage3.png')]   bg-orange-800  font-LuckiestGuy ">
@@ -77,12 +67,4 @@ export default function Home({ initialVideos }: Props) {
       )}
     </div>
   );
-}
-
-export async function getStaticProps() {
-  return {
-    props: {
-      initialVideos: videos,
-    },
-  };
 }
