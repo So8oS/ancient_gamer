@@ -280,5 +280,19 @@ export const games = [
     playableOnPhone: true,
     platform: "Flash Game",
   },
+  {
+    id: 18,
+    title: "Hide The Fart",
+    url: "https://www.youtube.com/embed/M2zM8GbDu3k",
+    links: [
+      {
+        id: 0,
+        url: "https://games.crazygames.com/en_US/hide-the-fart/index.html",
+      },
+    ],
+    available: true,
+    playableOnPhone: false,
+    platform: "Flash Game",
+  },
 ];
 export const videosAtom = atomWithStorage<Video[]>("games", games);

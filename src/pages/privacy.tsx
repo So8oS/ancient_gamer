@@ -3,8 +3,8 @@ import React from "react";
 
 const Privacy = () => {
   return (
-    <div className="p-4">
-      <div className="flex flex-col gap-3 bg-orange-800 p-10 rounded-2xl">
+    <div className=" flex flex-col justify-center items-center p-2 md:p-4">
+      <div className="flex flex-col gap-3 bg-orange-800 p-2 md:p-10 rounded-2xl">
         <strong>Privacy Policy</strong>
         <p>Last updated: August 16, 2023</p>
         <p>

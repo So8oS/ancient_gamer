@@ -21,14 +21,14 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center">
+    <div className="min-h-screen flex flex-col justify-center items-center ">
       {/* Componant */}
       <div className=" flex flex-col justify-center items-center w-80 h-full md:w-[45.9375rem]   bg-orange-800 p-6 rounded-2xl font-LuckiestGuy ">
-        <span className=" text-5xl font-bold mb-10 ">Contact me</span>
+        <span className=" md:text-5xl text-3xl font-bold mb-10 ">Contact me</span>
         {/* @ts-ignore */}
         <form className="flex flex-col  items-center gap-12 text-black " ref={form} onSubmit={sendEmail}>
           <input
-            className="  border border-gray-600 rounded-[0.625rem]  w-[18rem] h-[3.375rem] md:w-[27.25rem] p-2 dark:bg-[#3B3B3B] dark:text-white "
+            className="  border border-gray-600 rounded-[0.625rem]  w-full h-[3.375rem] md:w-[27.25rem] p-2 dark:bg-[#3B3B3B] dark:text-white "
             type="text"
             name="user_name"
             placeholder="Name"
