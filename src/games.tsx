@@ -294,5 +294,103 @@ export const games = [
     playableOnPhone: false,
     platform: "Flash Game",
   },
+  {
+    id: 19,
+    title: "Cat VS Dog",
+    url: "https://www.youtube.com/embed/stsbVLIaBrs",
+    links: [
+      {
+        id: 0,
+        url: "https://www.miniplay.com/embed/fleabag-vs-mutt",
+      },
+    ],
+    available: true,
+    playableOnPhone: true,
+    platform: "Flash Game",
+  },
+  {
+    id: 20,
+    title: "Drunk Man Run",
+    url: "https://www.youtube.com/embed/gUkjz7Nz_qA",
+    links: [
+      {
+        id: 0,
+        url: "https://www.gameflare.com/embed/walk-home-drunk/",
+      },
+    ],
+    available: true,
+    playableOnPhone: true,
+    platform: "Flash Game",
+  },
+  {
+    id: 21,
+    title: "3 Foot Ninja",
+    url: "https://www.youtube.com/embed/Go5sKpm9aJE",
+    links: [
+      {
+        id: 0,
+        url: "https://games.crazygames.com/en_US/3-foot-ninja/index.html",
+      },
+    ],
+    available: true,
+    playableOnPhone: false,
+    platform: "Flash Game",
+  },
+  {
+    id: 22,
+    title: "Fireboy And Watergirl",
+    url: "https://www.youtube.com/embed/omv4-cX6DtU",
+    links: [
+      {
+        id: 0,
+        url: "https://games.crazygames.com/en_US/fireboy-and-watergirl-the-forest-temple/index.html",
+      },
+    ],
+    available: true,
+    playableOnPhone: false,
+    platform: "Flash Game",
+  },
+  {
+    id: 23,
+    title: "Fancy Pants Adventure World",
+    url: "https://www.youtube.com/embed/l_vll3EglxA",
+    links: [
+      {
+        id: 0,
+        url: "https://games.crazygames.com/en_US/fancy-pants-adventure-world/index.html",
+      },
+    ],
+    available: true,
+    playableOnPhone: false,
+    platform: "Flash Game",
+  },
+  {
+    id: 24,
+    title: "Reel Gold",
+    url: "https://www.youtube.com/embed/bO8sCl0oWMc",
+    links: [
+      {
+        id: 0,
+        url: "https://fs-player.com/player2.php?url=https://cache.armorgames.com/files/games/reel-gold-403.swf?v=1373587520",
+      },
+    ],
+    available: true,
+    playableOnPhone: false,
+    platform: "Flash Game",
+  },
+  {
+    id: 25,
+    title: "Panik In Chocoland",
+    url: "https://www.youtube.com/embed/zQNg3aDnKKM",
+    links: [
+      {
+        id: 0,
+        url: "https://fs-player.com/player2.php?url=https://cache.armorgames.com/files/games/panik-in-chocoland-369.swf?v=1373587520",
+      },
+    ],
+    available: true,
+    playableOnPhone: false,
+    platform: "Flash Game",
+  },
 ];
 export const videosAtom = atomWithStorage<Video[]>("games", games);

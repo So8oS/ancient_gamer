@@ -17,7 +17,7 @@ const Contact = () => {
     );
     // @ts-ignore
     e.target.reset();
-    alert("the email has been sent");
+    alert("The Email Has been Sent");
   };
 
   return (
