@@ -301,7 +301,7 @@ export const games = [
     links: [
       {
         id: 0,
-        url: "https://www.twoplayergames.org/embed/fleabag-vs--mutt",
+        url: "https://www.gamenora.com/game/fleabag-vs-mutt/",
       },
     ],
     available: true,
