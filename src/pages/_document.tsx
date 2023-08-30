@@ -9,7 +9,6 @@ export default function Document() {
       <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet" />
       <link rel="shortcut icon" href="/icon.ico" />
       <meta name="monetag" content="b236c97ee6297480b90a9cad31f50302" />
-      <script src="https://alwingulla.com/88/tag.min.js" data-zone="8141" async data-cfasync="false"></script>
       {/* @ts-ignore */}
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9453766584853046" crossorigin="anonymous"></script>
 
