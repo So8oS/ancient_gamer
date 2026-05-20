@@ -8,7 +8,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        LuckiestGuy: ["Luckiest Guy", "cursive"],
+        pressStart: ['"Press Start 2P"', 'monospace'],
       },
     },
   },

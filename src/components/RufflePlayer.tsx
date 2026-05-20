@@ -32,6 +32,9 @@ export default function RufflePlayer({ swfUrl, onLoad, onError }: Props) {
       .catch(() => onErrorRef.current?.('Failed to load SWF file'))
 
     return () => {
+      try { player.volume = 0 } catch {}
+      try { player.pause() } catch {}
+      try { player.destroy() } catch {}
       if (containerRef.current?.contains(player)) {
         containerRef.current.removeChild(player)
       }

@@ -6,10 +6,27 @@ export const Route = createFileRoute('/about')({
 
 function About() {
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen">
-      <div className="flex flex-col justify-center items-center gap-10 w-full md:w-[60rem] bg-orange-800 p-10 md:p-20 rounded-2xl md:text-xl font-LuckiestGuy text-slate-200 mt-5 md:mt-0">
+    <div className="flex justify-center px-4 py-12">
+      <div
+        className="flex flex-col items-center gap-10 w-full"
+        style={{
+          maxWidth: '800px',
+          background: 'rgba(255,107,157,0.05)',
+          border: '1px solid rgba(255,107,157,0.15)',
+          borderRadius: '10px',
+          padding: '48px',
+        }}
+      >
         <img className="w-32" src="/logo.png" alt="logo" />
-        <div className="flex flex-col justify-center items-center gap-5">
+        <div
+          className="flex flex-col gap-8"
+          style={{
+            fontFamily: '"Press Start 2P"',
+            fontSize: '12px',
+            color: 'rgba(255,255,255,0.7)',
+            lineHeight: 2.4,
+          }}
+        >
           <p>
             Welcome to Ancient Gamer – your gateway to treasured gaming memories! Step into a world
             where flash games and vintage classics reign supreme, reigniting the spark of nostalgia

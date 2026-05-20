@@ -4,5 +4,25 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #8c9093;
+  background-color: #0d0020;
+}
+
+body {
+  font-family: 'Press Start 2P', monospace;
+  background-color: #0d0020;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0020;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 107, 157, 0.4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 107, 157, 0.7);
 }
