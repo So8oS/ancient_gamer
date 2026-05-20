@@ -9,6 +9,8 @@ export interface Game {
   links: { id: number; url: string }[];
   playableOnPhone: boolean;
   image: string;
+  swf?: string;
+  useRuffle?: boolean;
 }
 
 export const games: Game[] = [
@@ -21,6 +23,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/1640__stan-skates.swf",
   },
   {
     id: 1,
@@ -31,6 +35,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/bubbletroubleCdn.swf",
   },
   {
     id: 2,
@@ -41,6 +47,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/CryptRaider.swf",
   },
   {
     id: 3,
@@ -51,6 +59,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: true,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/bush-shoot-out-389.swf",
   },
   {
     id: 4,
@@ -101,6 +111,7 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: true,
     platform: "Flash Game",
+    useRuffle: false,
   },
   {
     id: 9,
@@ -131,6 +142,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/ha3miniclip.swf",
   },
   {
     id: 12,
@@ -146,6 +159,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/1451__bushroyalrampage.swf",
   },
   {
     id: 13,
@@ -156,6 +171,8 @@ export const games: Game[] = [
     available: false,
     playableOnPhone: false,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/obama-alien-defense.swf",
   },
   {
     id: 14,
@@ -166,6 +183,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: true,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/hot_dog_bush.swf",
   },
   {
     id: 15,
@@ -176,6 +195,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/hoboprisonbrawl.swf",
   },
   {
     id: 16,
@@ -186,6 +207,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/codeofthesamurai.swf",
   },
   {
     id: 17,
@@ -201,6 +224,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: true,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/stanjames.swf",
   },
   {
     id: 18,
@@ -211,6 +236,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/hidethefart.swf",
   },
   {
     id: 19,
@@ -221,6 +248,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: true,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/fleabagvsmutt.swf",
   },
   {
     id: 20,
@@ -231,6 +260,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: true,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/drunk-man-run.swf",
   },
   {
     id: 21,
@@ -241,6 +272,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/3-foot-ninja.swf",
   },
   {
     id: 22,
@@ -256,6 +289,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/Fireboy-and-Watergirl-in-The-Light-Temple.swf",
   },
   {
     id: 23,
@@ -271,6 +306,7 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
+    useRuffle: false,
   },
   {
     id: 24,
@@ -286,6 +322,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/reel-gold.swf",
   },
   {
     id: 25,
@@ -301,6 +339,8 @@ export const games: Game[] = [
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
+    useRuffle: true,
+    swf: "/games/Panik.swf",
   },
 ];
 
