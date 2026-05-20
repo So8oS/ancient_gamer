@@ -1,25 +1,22 @@
 import { atomWithStorage } from "jotai/utils";
-interface Video {
+
+export interface Game {
   id: number;
   title: string;
   url: string;
-  platform: string;
+  platform: "Flash Game" | "PS1" | "PS2";
   available: boolean;
   links: { id: number; url: string }[];
   playableOnPhone: boolean;
+  image: string;
 }
 
-export const games = [
+export const games: Game[] = [
   {
     id: 0,
     title: "Stan Skate",
     url: "https://www.youtube.com/embed/aLmmE8ihKdI",
-    links: [
-      {
-        id: 0,
-        url: "https://www.play-games.com/embed/31573.html",
-      },
-    ],
+    links: [{ id: 0, url: "https://www.play-games.com/embed/31573.html" }],
     image: "https://i.ytimg.com/vi/xrfx8tab5aQ/maxresdefault.jpg",
     available: true,
     playableOnPhone: false,
@@ -29,12 +26,7 @@ export const games = [
     id: 1,
     title: "Bubble Trouble",
     url: "https://www.youtube.com/embed/BGpij9BGSYo",
-    links: [
-      {
-        id: 0,
-        url: "https://www.play-games.com/embed/8043.html",
-      },
-    ],
+    links: [{ id: 0, url: "https://www.play-games.com/embed/8043.html" }],
     image: "",
     available: true,
     playableOnPhone: false,
@@ -44,12 +36,7 @@ export const games = [
     id: 2,
     title: "Crypt Raider",
     url: "https://www.youtube.com/embed/U3SA9DAAvaE",
-    links: [
-      {
-        id: 0,
-        url: "https://www.play-games.com/iframe/20369.html",
-      },
-    ],
+    links: [{ id: 0, url: "https://www.play-games.com/iframe/20369.html" }],
     image: "",
     available: true,
     playableOnPhone: false,
@@ -59,12 +46,7 @@ export const games = [
     id: 3,
     title: "Bush Shootout",
     url: "https://www.youtube.com/embed/5gpZdxTP_aU",
-    links: [
-      {
-        id: 0,
-        url: "https://games.crazygames.com/en_US/bush-shootout/index.html",
-      },
-    ],
+    links: [{ id: 0, url: "https://games.crazygames.com/en_US/bush-shootout/index.html" }],
     image: "",
     available: true,
     playableOnPhone: true,
@@ -74,12 +56,7 @@ export const games = [
     id: 4,
     title: "Spiderman 2000",
     url: "https://www.youtube.com/embed/ClghQ1KevD4",
-    links: [
-      {
-        id: 0,
-        url: "https://www.play-games.com/game/30768/spider-man-2000.html",
-      },
-    ],
+    links: [{ id: 0, url: "https://www.play-games.com/game/30768/spider-man-2000.html" }],
     image: "",
     available: true,
     playableOnPhone: false,
@@ -89,12 +66,7 @@ export const games = [
     id: 5,
     title: "Pepsiman",
     url: "https://www.youtube.com/embed/iy2OYaS2eyM",
-    links: [
-      {
-        id: 0,
-        url: "https://www.retrogames.cc/embed/42754-pepsiman-japan.html",
-      },
-    ],
+    links: [{ id: 0, url: "https://www.retrogames.cc/embed/42754-pepsiman-japan.html" }],
     image: "",
     available: true,
     playableOnPhone: true,
@@ -104,12 +76,7 @@ export const games = [
     id: 6,
     title: "Tom And Jerry: Fists Of Fury",
     url: "https://www.youtube.com/embed/KOUGAFdVmo8",
-    links: [
-      {
-        id: 0,
-        url: "https://www.retrogames.cc/embed/32832-tom-and-jerry-in-fists-of-furry-usa.html",
-      },
-    ],
+    links: [{ id: 0, url: "https://www.retrogames.cc/embed/32832-tom-and-jerry-in-fists-of-furry-usa.html" }],
     image: "",
     available: true,
     playableOnPhone: true,
@@ -119,12 +86,7 @@ export const games = [
     id: 7,
     title: "25 To Life",
     url: "https://www.youtube.com/embed/dViUzEcTOyA",
-    links: [
-      {
-        id: 0,
-        url: "https://placeholder-link.com",
-      },
-    ],
+    links: [{ id: 0, url: "https://placeholder-link.com" }],
     image: "",
     available: false,
     playableOnPhone: false,
@@ -134,12 +96,7 @@ export const games = [
     id: 8,
     title: "Circus Charlie",
     url: "https://www.youtube.com/embed/_JysmzZG_qQ",
-    links: [
-      {
-        id: 0,
-        url: "https://www.retrogames.cc/embed/21342-circus-charlie-japan.html",
-      },
-    ],
+    links: [{ id: 0, url: "https://www.retrogames.cc/embed/21342-circus-charlie-japan.html" }],
     image: "",
     available: true,
     playableOnPhone: true,
@@ -149,12 +106,7 @@ export const games = [
     id: 9,
     title: "The Incredibles: Rise of the Underminer",
     url: "https://www.youtube.com/embed/D0UvfNQZDKQ",
-    links: [
-      {
-        id: 0,
-        url: "https://placeholder-link.com",
-      },
-    ],
+    links: [{ id: 0, url: "https://placeholder-link.com" }],
     image: "",
     available: false,
     playableOnPhone: false,
@@ -164,12 +116,7 @@ export const games = [
     id: 10,
     title: "Pink Panther",
     url: "https://www.youtube.com/embed/OdMGHjIrOB8",
-    links: [
-      {
-        id: 0,
-        url: "https://www.retrogames.cc/embed/42265-pink-panther-pinkadelic-pursuit.html",
-      },
-    ],
+    links: [{ id: 0, url: "https://www.retrogames.cc/embed/42265-pink-panther-pinkadelic-pursuit.html" }],
     image: "",
     available: true,
     playableOnPhone: true,
@@ -179,12 +126,7 @@ export const games = [
     id: 11,
     title: "Heli Attack 3",
     url: "https://www.youtube.com/embed/ZVTTS4t8vsQ",
-    links: [
-      {
-        id: 0,
-        url: "https://www.miniplay.com/embed/heli-attack-3",
-      },
-    ],
+    links: [{ id: 0, url: "https://www.miniplay.com/embed/heli-attack-3" }],
     image: "",
     available: true,
     playableOnPhone: false,
@@ -209,14 +151,9 @@ export const games = [
     id: 13,
     title: "Obama Alien Defense",
     url: "https://www.youtube.com/embed/slsaUl9g4JY",
-    links: [
-      {
-        id: 0,
-        url: "https://placeholder-link.com",
-      },
-    ],
+    links: [{ id: 0, url: "https://placeholder-link.com" }],
     image: "",
-    available: true,
+    available: false,
     playableOnPhone: false,
     platform: "Flash Game",
   },
@@ -224,12 +161,7 @@ export const games = [
     id: 14,
     title: "Hotdog Bush",
     url: "https://www.youtube.com/embed/5C1P45gn6-g",
-    links: [
-      {
-        id: 0,
-        url: "https://www.play-games.com/iframe/4272.html",
-      },
-    ],
+    links: [{ id: 0, url: "https://www.play-games.com/iframe/4272.html" }],
     image: "",
     available: true,
     playableOnPhone: true,
@@ -239,12 +171,7 @@ export const games = [
     id: 15,
     title: "Hobo Prison Brawl",
     url: "https://www.youtube.com/embed/qzmg3X4ux5A",
-    links: [
-      {
-        id: 0,
-        url: "https://www.play-games.com/embed/19584.html",
-      },
-    ],
+    links: [{ id: 0, url: "https://www.play-games.com/embed/19584.html" }],
     image: "",
     available: true,
     playableOnPhone: false,
@@ -254,12 +181,7 @@ export const games = [
     id: 16,
     title: "Samurai Jack: Code of the Samurai",
     url: "https://www.youtube.com/embed/6U2qouei2I0",
-    links: [
-      {
-        id: 0,
-        url: "https://www.play-games.com/embed/33552.html",
-      },
-    ],
+    links: [{ id: 0, url: "https://www.play-games.com/embed/33552.html" }],
     image: "",
     available: true,
     playableOnPhone: false,
@@ -284,12 +206,8 @@ export const games = [
     id: 18,
     title: "Hide The Fart",
     url: "https://www.youtube.com/embed/M2zM8GbDu3k",
-    links: [
-      {
-        id: 0,
-        url: "https://games.crazygames.com/en_US/hide-the-fart/index.html",
-      },
-    ],
+    links: [{ id: 0, url: "https://games.crazygames.com/en_US/hide-the-fart/index.html" }],
+    image: "",
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
@@ -298,12 +216,8 @@ export const games = [
     id: 19,
     title: "Cat VS Dog",
     url: "https://www.youtube.com/embed/stsbVLIaBrs",
-    links: [
-      {
-        id: 0,
-        url: "https://www.gamenora.com/game/fleabag-vs-mutt/",
-      },
-    ],
+    links: [{ id: 0, url: "https://www.gamenora.com/game/fleabag-vs-mutt/" }],
+    image: "",
     available: true,
     playableOnPhone: true,
     platform: "Flash Game",
@@ -312,12 +226,8 @@ export const games = [
     id: 20,
     title: "Drunk Man Run",
     url: "https://www.youtube.com/embed/gUkjz7Nz_qA",
-    links: [
-      {
-        id: 0,
-        url: "https://www.gameflare.com/embed/walk-home-drunk/",
-      },
-    ],
+    links: [{ id: 0, url: "https://www.gameflare.com/embed/walk-home-drunk/" }],
+    image: "",
     available: true,
     playableOnPhone: true,
     platform: "Flash Game",
@@ -326,12 +236,8 @@ export const games = [
     id: 21,
     title: "3 Foot Ninja",
     url: "https://www.youtube.com/embed/Go5sKpm9aJE",
-    links: [
-      {
-        id: 0,
-        url: "https://games.crazygames.com/en_US/3-foot-ninja/index.html",
-      },
-    ],
+    links: [{ id: 0, url: "https://games.crazygames.com/en_US/3-foot-ninja/index.html" }],
+    image: "",
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
@@ -346,6 +252,7 @@ export const games = [
         url: "https://games.crazygames.com/en_US/fireboy-and-watergirl-the-forest-temple/index.html",
       },
     ],
+    image: "",
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
@@ -360,6 +267,7 @@ export const games = [
         url: "https://games.crazygames.com/en_US/fancy-pants-adventure-world/index.html",
       },
     ],
+    image: "",
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
@@ -374,6 +282,7 @@ export const games = [
         url: "https://fs-player.com/player2.php?url=https://cache.armorgames.com/files/games/reel-gold-403.swf?v=1373587520",
       },
     ],
+    image: "",
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
@@ -388,9 +297,11 @@ export const games = [
         url: "https://fs-player.com/player2.php?url=https://cache.armorgames.com/files/games/panik-in-chocoland-369.swf?v=1373587520",
       },
     ],
+    image: "",
     available: true,
     playableOnPhone: false,
     platform: "Flash Game",
   },
 ];
-export const videosAtom = atomWithStorage<Video[]>("games", games);
+
+export const videosAtom = atomWithStorage<Game[]>("games", games);
