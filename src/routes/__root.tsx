@@ -36,6 +36,17 @@ function RootLayout() {
             </span>
             <img src="/logo.png" alt="logo" style={{ height: logoImg, width: 'auto' }} />
           </Link>
+          <Link
+            to="/blog"
+            style={{
+              fontFamily: '"Press Start 2P"',
+              fontSize: isMobile ? '8px' : '10px',
+              color: 'rgba(255,107,157,0.85)',
+              textDecoration: 'none',
+            }}
+          >
+            BLOG
+          </Link>
         </div>
 
         <div className="flex items-center gap-2">
@@ -82,6 +93,10 @@ function RootLayout() {
           <Link to="/contact" className="hover:opacity-100 transition-opacity"
             style={{ fontFamily: '"Press Start 2P"', fontSize: footSz, color: 'rgba(255,255,255,0.3)' }}>
             CONTACT
+          </Link>
+          <Link to="/blog" className="hover:opacity-100 transition-opacity"
+            style={{ fontFamily: '"Press Start 2P"', fontSize: footSz, color: 'rgba(255,255,255,0.3)' }}>
+            BLOG
           </Link>
         </div>
         <span style={{ fontFamily: '"Press Start 2P"', fontSize: footSz, color: 'rgba(255,255,255,0.15)' }}>

@@ -199,6 +199,12 @@ function Privacy() {
           For more information about the cookies we use and your choices regarding cookies, please
           visit our Cookies Policy or the Cookies section of our Privacy Policy.
         </p>
+        <p style={pStyle}>
+          This website uses third-party advertising services, including Media.net, which may use
+          cookies and web beacons to serve ads based on your prior visits to this or other websites.
+          You may opt out of personalized advertising by visiting the NAI opt-out page at
+          www.networkadvertising.org.
+        </p>
 
         <h2 style={h2Style}>Use of Your Personal Data</h2>
         <p style={pStyle}>The Company may use Personal Data for the following purposes:</p>
