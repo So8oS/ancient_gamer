@@ -47,7 +47,7 @@ function Game() {
         ) : (
           <iframe
             className="w-full h-full"
-            src={game?.links[0].url}
+            src={game?.links?.[0]?.url}
             allowFullScreen
             loading="lazy"
             onLoad={() => setStatus('loaded')}
