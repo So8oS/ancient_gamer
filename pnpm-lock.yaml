@@ -30,9 +30,6 @@ importers:
         specifier: ^5.3.0
         version: 5.6.0(react@18.3.1)
     devDependencies:
-      '@ruffle-rs/ruffle':
-        specifier: ^0.2.0
-        version: 0.2.0
       '@tanstack/router-plugin':
         specifier: ^1.119.0
         version: 1.168.7(@tanstack/react-router@1.170.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.4.21)
@@ -545,9 +542,6 @@ packages:
     resolution: {integrity: sha512-QVTUovf40zgTqlFVrKA1uXMVvU2QWEFWfAH8Wdc48IxLvrJMQVMBRjuQyUpzZCDkakImib9eVazbWlC6ksWtJw==}
     cpu: [x64]
     os: [win32]
-
-  '@ruffle-rs/ruffle@0.2.0':
-    resolution: {integrity: sha512-3SgiTrl+q4cCROpWiKZIwXyrWBpxfSFB42sNUINq1X4IcLNy/lq00UBbIonMB99Onmo1nx91lWxkI83I2tMwvw==}
 
   '@tanstack/history@1.162.0':
     resolution: {integrity: sha512-79pf/RkhteYZTRgcR4F9kbk84P2N8rugQJswxfIqovlbRiT3yI7eBE+5QorIrZaOKktsgzRlXh1l/du/xpl4iA==}
@@ -1899,8 +1893,6 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.60.4':
     optional: true
-
-  '@ruffle-rs/ruffle@0.2.0': {}
 
   '@tanstack/history@1.162.0': {}
 
